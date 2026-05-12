@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "LAIBench: A Governance-Oriented Benchmark Framework for AI-Assisted Radiology Reporting"
+message: "If you use LAIBench, please cite this repository and the associated preprint."
+type: software
+version: 1.0.0-public-technical-preview
+repository-code: "https://github.com/Laudos-AI/laibench-public"
+url: "https://laibench.laudos.ai"
+license: LicenseRef-laibench-source-available
+authors:
+  - name: "Laudos.AI"
+    city: "São Paulo"
+    country: BR
+# TODO: confirm individual author names, affiliations, ordering, corresponding author,
+# and conflicts of interest before any release/tag/DOI assignment.

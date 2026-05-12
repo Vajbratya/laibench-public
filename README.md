@@ -47,7 +47,7 @@ The full clinical corpus is private/gated. The hidden test set is private. Offic
 
 ## Scoring
 
-LAIBench reports weighted finding-to-report scores and strict gate outcomes. A high average score should not hide critical failures. Critical finding omissions, unsafe negations, contradictions, unsupported normalizing language, and guideline/structure failures remain visible as separate error gates.
+The public demo harness can compute weighted finding-to-report scores and strict gate outcomes for synthetic examples. Official scores require controlled or hosted evaluation. A high average score should not hide critical failures. Critical finding omissions, unsafe negations, contradictions, unsupported normalizing language, and guideline/structure failures remain visible as separate error gates.
 
 | Dimension | Weight | Purpose |
 | --- | ---: | --- |
