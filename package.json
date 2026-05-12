@@ -17,7 +17,7 @@
     "smoke:mock": "tsx src/cli.ts suite --suite suites/lite-public.pt-BR.json --provider command --cmd \"node examples/mock-agent.mjs\" --run-name mock-agent --out runs/mock-agent.json",
     "smoke:leaderboard": "tsx src/cli.ts leaderboard --inputs runs/mock-agent.json --out runs/leaderboard.json --markdown runs/leaderboard.md",
     "smoke:openai-compatible": "node examples/smoke-openai-compatible.mjs",
-    "test": "node --import tsx --test src/**/*.test.ts"
+    "test": "node --import tsx --test src/*.test.ts"
   },
   "engines": {
     "node": ">=20",
