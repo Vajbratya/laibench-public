@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>laibench — Benchmark de Geração Achado-para-Laudo</title>
-    <meta name="description" content="A public reference benchmark for radiology finding-to-report generation. Five independent dimensions, reproducible and auditable. Text-only, no vision.">
+    <meta name="description" content="LAIBench technical preview: public framework, synthetic demo cases, controlled clinical corpus, private hidden test set, and hosted evaluation by request.">
     <meta property="og:title" content="laibench — Agent-centric benchmark for radiology finding-to-report generation">
     <meta property="og:description" content="Public reference benchmark for radiology finding-to-report generation.">
     <meta name="laibench-artifact-id" content="BEYOND-TEMPLATES-PREPRINT-2026-05-11">
@@ -603,7 +603,7 @@
                 <a class="nav-link hide-mobile" href="#dimensions">Dimensions</a>
                 <a class="nav-link" href="#submit">Submit</a>
                 <a class="nav-link hide-mobile" href="#paper">Paper</a>
-                <a class="nav-github" href="https://github.com/Vajbratya/laibench" target="_blank">
+                <a class="nav-github" href="https://github.com/Laudos-AI/laibench-public" target="_blank">
                     <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
                     <span>GitHub</span>
                 </a>
@@ -623,11 +623,11 @@
 
         <!-- HERO -->
         <section id="hero">
-            <div class="hero-badge"><span class="dot"></span> v2.1 &mdash; Reference-Grade + Adversarial</div>
+            <div class="hero-badge"><span class="dot"></span> Technical preview &mdash; public framework, controlled clinical data</div>
             <h1 class="hero-title">laibench</h1>
-            <p class="hero-tagline" data-i18n="tagline">A governance-oriented benchmark framework for AI-assisted radiology reporting. Public framework, synthetic demo cases, private clinical corpus.</p>
+            <p class="hero-tagline" data-i18n="tagline">Technical preview for radiology finding-to-report evaluation. Public method, synthetic demo cases, controlled clinical corpus, hosted evaluation by request.</p>
             <div class="hero-ctas">
-                <a class="btn-primary" href="#leaderboard">View Leaderboard</a>
+                <a class="btn-primary" href="#leaderboard">View Technical Preview</a>
                 <a class="btn-secondary" href="/laibench-preprint.pdf" target="_blank" data-telemetry-artifact="preprint-pdf">Download PDF</a>
             </div>
         </section>
@@ -635,90 +635,48 @@
         <!-- STATS BAR -->
         <div id="stats-bar">
             <div class="stats-inner">
-                <div class="stat-item"><span class="stat-num">685</span> Public cases</div>
-                <div class="stat-item"><span class="stat-num">528</span> Variant-controlled</div>
-                <div class="stat-item"><span class="stat-num">8</span> Adversarial classes</div>
+                <div class="stat-item"><span class="stat-num">PUBLIC</span> synthetic lite-public.pt-BR</div>
+                <div class="stat-item"><span class="stat-num">STATUS</span> technical preview</div>
+                <div class="stat-item"><span class="stat-num">DATA</span> clinical corpus controlled</div>
                 <div class="stat-item"><span class="stat-num">5</span> Dimensions</div>
-                <div class="stat-item"><span class="stat-num">3</span> Locales (PT-BR/EN/ES)</div>
-                <div class="stat-item"><span class="stat-num">224</span> Tests</div>
+                <div class="stat-item"><span class="stat-num">HIDDEN</span> test set not distributed</div>
+                <div class="stat-item"><span class="stat-num">UPDATED</span> 11.v.2026</div>
             </div>
         </div>
 
         <!-- LEADERBOARD -->
         <section id="leaderboard" class="section">
             <div class="section-label">Leaderboard</div>
-            <div class="section-title" data-i18n="globalRankings">Public Demo Snapshot</div>
-            <div class="section-desc" data-i18n="lbDesc">The public repository ships a small synthetic demo suite for harness review. Official controlled-access leaderboards are not included in this release.</div>
+            <div class="section-title" data-i18n="globalRankings">Standing - Public Technical Preview</div>
+            <div class="section-desc" data-i18n="lbDesc">Synthetic demo only. This is not an official clinical leaderboard. Official rows require controlled or hosted evaluation with frozen outputs, suite hashes, disclosure metadata, and eligibility review.</div>
             <div class="lb-table-wrap">
                 <table class="lb-table">
                     <thead>
                         <tr>
-                            <th style="width:150px">Evaluation</th>
+                            <th style="width:150px">No.</th>
                             <th>System</th>
+                            <th>Suite</th>
                             <th>Type</th>
                             <th>Strict PASS</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="lb-track">mini-agent<br>10 cases<br>lite-public.pt-BR</td>
+                            <td class="lb-track">&mdash;</td>
                             <td>
                                 <div class="lb-agent">
-                                    <span class="lb-agent-name">DeepSeek V4 Pro</span>
-                                    <span class="lb-tag lb-tag-baseline">Baseline</span>
+                                    <span class="lb-agent-name">Your agent here</span>
+                                    <span class="lb-tag lb-tag-baseline">Demo</span>
                                 </div>
                             </td>
-                            <td class="lb-track">Raw model</td>
-                            <td class="lb-score lb-score-default">40.0%</td>
-                        </tr>
-                        <tr>
-                            <td class="lb-track">mini-agent<br>10 cases<br>lite-public.pt-BR</td>
-                            <td>
-                                <div class="lb-agent">
-                                    <span class="lb-agent-name">DeepSeek V4 Flash</span>
-                                    <span class="lb-tag lb-tag-baseline">Baseline</span>
-                                </div>
-                            </td>
-                            <td class="lb-track">Raw model</td>
-                            <td class="lb-score lb-score-default">20.0%</td>
-                        </tr>
-                        <tr>
-                            <td class="lb-track">mini-agent<br>10 cases<br>lite-public.pt-BR</td>
-                            <td>
-                                <div class="lb-agent">
-                                    <span class="lb-agent-name">inclusionAI Ring-2.6-1T</span>
-                                    <span class="lb-tag lb-tag-baseline">Baseline</span>
-                                </div>
-                            </td>
-                            <td class="lb-track">Raw model</td>
-                            <td class="lb-score lb-score-default">10.0%</td>
-                        </tr>
-                        <tr>
-                            <td class="lb-track">mini-agent<br>10 cases<br>lite-public.pt-BR</td>
-                            <td>
-                                <div class="lb-agent">
-                                    <span class="lb-agent-name">GPT-5.4 Mini</span>
-                                    <span class="lb-tag lb-tag-baseline">Baseline</span>
-                                </div>
-                            </td>
-                            <td class="lb-track">Raw model</td>
-                            <td class="lb-score lb-score-default">0.0%</td>
-                        </tr>
-                        <tr>
-                            <td class="lb-track">public reference</td>
-                            <td>
-                                <div class="lb-agent">
-                                    <span class="lb-agent-name">Open submissions</span>
-                                    <span class="lb-tag lb-tag-baseline">Open</span>
-                                </div>
-                            </td>
-                            <td class="lb-track">Any agent</td>
-                            <td class="lb-score lb-score-default">Submit</td>
+                            <td class="lb-track">lite-public.pt-BR</td>
+                            <td class="lb-track">Synthetic demo</td>
+                            <td class="lb-score lb-score-default">Submit locally</td>
                         </tr>
 	                    </tbody>
 	                </table>
 	            </div>
-	            <div class="lb-note"><strong>Strict PASS</strong> is the public reporting metric. It counts cases where the report passes every clinically decisive gate. The public package includes only <code>lite-public.pt-BR</code> synthetic/demo cases; controlled-access suites, hidden tests, answer keys, and full clinical corpora are not shipped.</div>
+	            <div class="lb-note">The current public package exposes the harness, scoring contract, synthetic demo suite, preprint materials, and submission rules. No official clinical leaderboard is published in this technical preview.</div>
 	        </section>
 
         <hr class="section-divider">
@@ -733,7 +691,7 @@
                     <div class="how-card-num">01</div>
                     <div class="how-card-title">Input</div>
                     <div class="how-card-text">
-                        The evaluated system receives an exam descriptor, clinical findings, and optional context: gold findings, guideline expectations, and patient history. It must generate a complete HTML radiology report.
+                        The evaluated system receives an exam descriptor, synthetic findings, and public-safe optional context. It must generate a complete HTML radiology report for framework testing.
                     </div>
                 </div>
                 <div class="how-card">
@@ -747,7 +705,7 @@
                     <div class="how-card-num">03</div>
                     <div class="how-card-title">Score</div>
                     <div class="how-card-text">
-                        Strict PASS is the only public metric: a case passes only when every clinically decisive gate holds (critical findings preserved, laterality correct, no unsafe negation, structural integrity, terminology compliance). All rows publish bootstrap CIs, policy gates, and canary-token contamination checks.
+                        Strict PASS is the public gate metric: a synthetic case passes only when decisive reporting checks hold. Official rows require controlled or hosted evaluation with frozen outputs and disclosure metadata.
                     </div>
                 </div>
             </div>
@@ -882,7 +840,7 @@
             <div class="submit-step">
                 <div class="submit-step-title" data-i18n="step1Title">1. Choose a public suite</div>
                 <div class="submit-step-desc" data-i18n="step1Desc">Use the public repository to prepare the evaluation files and scoring harness.</div>
-                <div class="code-block"><span class="comment">public repository</span><br><span class="str">https://github.com/Vajbratya/laibench</span><br><br><span class="comment">submission contract</span><br><span class="str">case id + generated report + public label</span></div>
+                <div class="code-block"><span class="comment">public repository</span><br><span class="str">https://github.com/Laudos-AI/laibench-public</span><br><br><span class="comment">submission contract</span><br><span class="str">case id + generated report + public label</span></div>
             </div>
 
             <div class="submit-step">
@@ -935,7 +893,7 @@
                 <div class="footer-brand">por <a href="https://laudos.ai" target="_blank">laudos.ai</a></div>
                 <div class="footer-links">
                     <a class="footer-link" href="/LICENSE.txt" target="_blank">Proprietary license</a>
-                    <a class="footer-link" href="https://github.com/Vajbratya/laibench" target="_blank">GitHub</a>
+                    <a class="footer-link" href="https://github.com/Laudos-AI/laibench-public" target="_blank">GitHub</a>
                 </div>
             </div>
         </footer>
@@ -953,22 +911,25 @@
         var targetPanX = 0, targetPanY = 0, targetZoom = 1.0;
         var panX = 0, panY = 0, zoom = 1.0;
 
-        var B1_anat = ["LOBO SUPERIOR DIREITO","LOBO SUPERIOR ESQUERDO","LOBO INFERIOR DIREITO","LOBO INFERIOR ESQUERDO","LOBO MEDIO","LINGULA","SEGMENTO APICAL DO LSD","SEGMENTO APICOPOSTERIOR DO LSE","SEGMENTO ANTERIOR DO LSD","SEGMENTO LATERAL DO LM","SEGMENTO POSTERIOR BASAL DO LIE","SEGMENTO ANTERIOR BASAL DO LID","SEGMENTO SUPERIOR DO LIE","REGIAO PERIHILAR DIREITA","REGIAO PERIHILAR ESQUERDA","REGIAO SUBPLEURAL BILATERAL","BASES PULMONARES","APICES PULMONARES","REGIAO PARACARDLACA ESQUERDA","FISSURA OBLIQUA DIREITA"];
-        var B1_find = ["CONSOLIDACAO PARENQUIMATOSA","OPACIDADE EM VIDRO FOSCO","NODULO SOLIDO","NODULO SUBSOLIDO","NODULO PARTE-SOLIDO","MASSA ESPICULADA","ATELECTASIA SUBSEGMENTAR","ATELECTASIA LAMINAR","BRONQUIECTASIAS CILINDRICAS","BRONQUIECTASIAS VARICOSAS","ENFISEMA CENTROLOBULAR","ENFISEMA PARASEPTAL","ESPESSAMENTO SEPTAL INTERLOBULAR","MICRONODULOS CENTROLOBULARES","PADRAO ARVORE EM BROTAMENTO","PADRAO CRAZY-PAVING","BANDA PARENQUIMATOSA","ESPESSAMENTO PERIBRONCOVASCULAR","FAVEOLAMENTO","PADRAO RETICULAR","IMPACTACAO MUCOIDE","CAVITACAO DE PAREDES ESPESSAS","BOLHAS SUBPLEURAIS","CISTO AEREO","AREA DE APRISIONAMENTO AEREO"];
-        var B1_det = ["MEDINDO 6MM. LUNG-RADS 2.","MEDINDO 8MM. LUNG-RADS 3.","MEDINDO 12MM. LUNG-RADS 4A.","MEDINDO 22MM. LUNG-RADS 4B.","COM BRONCOGRAMA AEREO.","COM HALO EM VIDRO FOSCO.","DE ASPECTO RESIDUAL.","SUGESTIVO DE PROCESSO INFECCIOSO.","A ESCLARECER ETIOLOGIA.","ESTAVEL EM RELACAO AO EXAME PREVIO.","REDUZIDO EM RELACAO AO CONTROLE ANTERIOR.","DE PROVAVEL NATUREZA INFLAMATORIA.","COM SINAL DO HALO INVERTIDO.","NOVO EM RELACAO AO ESTUDO PREVIO.","INESPECIFICO. CORRELACIONAR CLINICAMENTE.","COM COMPONENTE EXPANSIVO.","ASSOCIADO A LINFONODOMEGALIA MEDIASTINAL.","COM CALCIFICACAO EXCENTRICA.","COM REALCE HETEROGENEO APOS CONTRASTE.","DE DISTRIBUICAO PERIFERICA.","DE DISTRIBUICAO DIFUSA.","PREDOMINANDO NAS REGIOES DEPENDENTES.","BILATERAL E SIMETRICO.","ASSIMETRICO COM PREDOMINIO A DIREITA.","COM PADRAO PERILOBULAR."];
-        var B1_extra = ["DERRAME PLEURAL LAMINAR A ESQUERDA.","DERRAME PLEURAL MODERADO A DIREITA.","DERRAME PLEURAL BILATERAL DE PEQUENO VOLUME.","PNEUMOTORAX DE PEQUENO VOLUME A DIREITA.","PNEUMOTORAX HIPERTENSIVO A ESQUERDA COM DESVIO MEDIASTINAL.","ESPESSAMENTO PLEURAL APICAL BILATERAL.","TROMBOEMBOLISMO PULMONAR EM ARTERIA LOBAR INFERIOR DIREITA.","TROMBOEMBOLISMO PULMONAR EM RAMO SEGMENTAR DO LIE.","TEP CRONICO COM FALHA DE ENCHIMENTO MURAL.","TRONCO DA ARTERIA PULMONAR DILATADO MEDINDO 32MM.","LINFONODOMEGALIAS MEDIASTINAIS EM CADEIA SUBCARINAL MEDINDO 18MM.","LINFONODOMEGALIA PRE-TRAQUEAL DE 14MM.","LINFONODOMEGALIA HILAR DIREITA DE 16MM.","CALCIFICACAO CORONARIANA SIGNIFICATIVA.","DERRAME PERICARDICO LAMINAR.","HERNIA HIATAL DE DESLIZAMENTO.","ESOFAGO DILATADO COM NIVEL LIQUIDO.","TIREOIDE MERGULHANTE COM EXTENSAO RETROESTERNAL.","FRATURA DE ARCO COSTAL POSTERIOR DIREITO.","LESAO LITICA EM CORPO VERTEBRAL DE T11.","CARDIOMEGALIA LEVE. ICT LIMLTROFE.","LAIBENCH AVALIA PRECISAO TERMINOLOGICA DE GERACAO TEXTO-A-TEXTO.","BENCHMARK OPEN-SOURCE PARA LAUDOS RADIOLOGICOS EM PT-BR.","PADRAO-OURO DE BENCHMARK RADIOLOGICO. TEXTO PURO. SEM VISAO.","LAIBENCH V1.0. PROTOCOLO PARAMETRICO DE AVALIACAO.","CINCO DIMENSOES: CRIT QUAL TERM GUIDE RAG."];
-        var B2_anat = ["SEGMENTO VII HEPATICO","SEGMENTO VIII HEPATICO","SEGMENTO IV HEPATICO","SEGMENTO VI HEPATICO","SEGMENTO II HEPATICO","LOBO CAUDADO","CABECA DO PANCREAS","CORPO DO PANCREAS","CAUDA DO PANCREAS","PROCESSO UNCINADO","BACO","GLANDULA ADRENAL DIREITA","GLANDULA ADRENAL ESQUERDA","POLO SUPERIOR DO RIM DIREITO","POLO INFERIOR DO RIM ESQUERDO","CORTEX RENAL DIREITO","SEIO RENAL ESQUERDO","HEMISFERIO CEREBELAR DIREITO","HEMISFERIO CEREBELAR ESQUERDO","SUBSTANCIA BRANCA PERIVENTRICULAR","NUCLEO LENTIFORME ESQUERDO","TALAMO DIREITO","LOBO TEMPORAL MESIAL DIREITO","HIPOCAMPO ESQUERDO","PONTE","BULBO","PEDUNCULO CEREBRAL","CORPO CALOSO","REGIAO INSULAR DIREITA","CENTRO SEMIOVAL BILATERAL"];
-        var B2_find = ["LESAO FOCAL SOLIDA","LESAO FOCAL CISTICA","LESAO HETEROGENEA","NODULO HIPOINTENSO EM T1","NODULO HIPERINTENSO EM T2","AREA DE RESTRICAO A DIFUSAO","AREA DE HIPERSINAL EM FLAIR","LESAO COM REALCE ANELAR","LESAO COM WASH-OUT PORTAL","LESAO COM REALCE ARTERIAL","CISTO SIMPLES","CISTO COMPLEXO","HEMANGIOMA TIPICO","AREA DE TRANSFORMACAO GORDUROSA FOCAL","AREA DE EDEMA CITOTOXICO","AREA DE EDEMA VASOGENICO","MICROHEMORRAGIA","COLECAO LIQUIDA","ABSCESSO","ESPESSAMENTO PARIETAL CONCENTRICO"];
-        var B2_det = ["MEDINDO 15MM. LI-RADS 3.","MEDINDO 22MM. LI-RADS 4.","MEDINDO 28MM. LI-RADS 5.","COM CAPSULA.","SEM CAPSULA APARENTE.","COM CRESCIMENTO EM RELACAO AO PREVIO.","ESTAVEL EM RELACAO AO CONTROLE.","BOSNIAK I.","BOSNIAK II.","BOSNIAK IIF.","BOSNIAK III.","BOSNIAK IV.","FAZEKAS I.","FAZEKAS II.","FAZEKAS III.","COM EFEITO EXPANSIVO LOCAL.","SEM EFEITO DE MASSA.","COM DESVIO DA LINHA MEDIA DE 4MM.","COM HALO DE EDEMA.","COM COMPONENTE HEMORRAGICO.","COM SATELITOSE.","COM INVASAO VASCULAR.","COM TROMBOSE DE VEIA PORTA.","DE ASPECTO INESPECIFICO.","SUGESTIVO DE PROCESSO NEOPLASICO.","DE PROVAVEL NATUREZA BENIGNA.","A CORRELACIONAR COM MARCADORES TUMORAIS.","AVALIAR COM ANGIORRESSONANCIA.","COM QUEDA DE SINAL NO FORA DE FASE.","COM RESTRICAO A DIFUSAO. ADC REDUZIDO."];
-        var B2_extra = ["DILATACAO DAS VIAS BILIARES INTRA-HEPATICAS.","COLEDOCOLITIASE COM CALCULO DE 8MM.","DILATACAO DO DUCTO PANCREATICO PRINCIPAL.","HERNIA DISCAL EXTRUSA L4-L5 POSTEROLATERAL ESQUERDA.","HERNIA DISCAL PROTRUSA L5-S1 CENTRAL.","ESTENOSE DO CANAL VERTEBRAL EM L4-L5.","DISCOPATIA DEGENERATIVA MULTINIVEL.","LISTESE GRAU I DE L4 SOBRE L5.","ANEURISMA DA AORTA ABDOMINAL INFRARRENAL MEDINDO 52MM.","ESTENOSE DA ARTERIA RENAL ESQUERDA PROXIMAL.","TROMBOSE DA VEIA MESENTERICA SUPERIOR.","ASCITE DE MODERADO VOLUME.","ESPLENOMEGALIA HOMOGENEA MEDINDO 16CM.","COLECISTITE AGUDA COM ESPESSAMENTO PARIETAL E MURPHY ULTRASSONOGRAFICO.","PANCREATITE AGUDA COM COLECOES PERIPANCREATICAS.","ANEURISMA SACULAR DE 7MM NA ARTERIA COMUNICANTE ANTERIOR.","MALFORMACAO ARTERIOVENOSA NO LOBO FRONTAL ESQUERDO.","HIDROCEFALIA COMUNICANTE COM DILATACAO DO SISTEMA VENTRICULAR.","CISTO ARACNOIDE NA FOSSA POSTERIOR MEDINDO 30MM.","MENINGIOMA PARASAGITAL COM BASE DURAL AMPLA.","LAIBENCH POR LAUDOS.AI. CINCO DIMENSOES DE AVALIACAO.","PROTOCOLO PARAMETRICO. REPRODUCIVEL. AUDITAVEL.","BENCHMARK DE GERACAO TEXTO-A-TEXTO PARA RADIOLOGIA.","AVALIACAO INDEPENDENTE POR DIMENSAO. SCORE 0 A 100.","SUITES PUBLICAS TRAVADAS. MONITOR PRIVADO DE 40 CASOS."];
-        var B3_anat = ["LOBO DIREITO DA TIREOIDE","LOBO ESQUERDO DA TIREOIDE","ISTMO TIREOIDIANO","GLANDULA SUBMANDIBULAR DIREITA","PAROTIDA ESQUERDA","MAMA DIREITA QSE","MAMA DIREITA QSI","MAMA DIREITA QIE","MAMA ESQUERDA QSE","MAMA ESQUERDA QSI","MAMA ESQUERDA QII","REGIAO RETROAREOLAR DIREITA","AXILA ESQUERDA","FIGADO","VESICULA BILIAR","RIM DIREITO","RIM ESQUERDO","BEXIGA","OVARIO DIREITO","OVARIO ESQUERDO","UTERO","PROSTATA ZONA PERIFERICA ESQUERDA","PROSTATA ZONA DE TRANSICAO DIREITA","TESTICULO DIREITO","TESTICULO ESQUERDO","EPIDIDIMO DIREITO","VEIA FEMORAL SUPERFICIAL DIREITA","VEIA POPLITEA ESQUERDA","ARTERIA CAROTIDA INTERNA DIREITA","ARTERIA CAROTIDA INTERNA ESQUERDA"];
-        var B3_find = ["NODULO SOLIDO HIPOECOICO","NODULO SOLIDO ISOECOICO","NODULO MISTO","NODULO CISTICO","CISTO SIMPLES","CISTO COMPLEXO","CISTO HEMORRAGICO","NODULO COM MICROCALCIFICACOES","NODULO COM MARGENS IRREGULARES","NODULO COM FLUXO CENTRAL AO DOPPLER","NODULO COM HALO HIPOECOICO","LESAO ANECOICA","FORMACAO SOLIDA HETEROGENEA","ESPESSAMENTO PARIETAL","COLECAO ANECOICA","CALCULO HIPERECOGENICO COM SOMBRA ACUSTICA","POLIPO PEDICULADO","AREA DE ESTEATOSE FOCAL","PLACA ATEROMATOSA CALCIFICADA","TROMBO ECOGENICO ENDOLUMINAL"];
-        var B3_det = ["MEDINDO 7MM. TI-RADS 2.","MEDINDO 11MM. TI-RADS 3.","MEDINDO 15MM. TI-RADS 4.","MEDINDO 22MM. TI-RADS 5.","MEDINDO 9MM. BI-RADS 3.","MEDINDO 14MM. BI-RADS 4A.","MEDINDO 18MM. BI-RADS 4B.","MEDINDO 25MM. BI-RADS 4C.","MEDINDO 31MM. BI-RADS 5.","MEDINDO 8MM. PI-RADS 3.","MEDINDO 13MM. PI-RADS 4.","MEDINDO 19MM. PI-RADS 5.","COM VASCULARIZACAO PERIFERICA.","COM VASCULARIZACAO CENTRAL.","AVASCULAR AO DOPPLER.","COM COMPONENTE SOLIDO MURAL.","COM SEPTACOES ESPESSAS.","COM ECOS INTERNOS HOMOGENEOS.","COM CONTEUDO ESPESSO.","SEM FLUXO AO DOPPLER.","COM REFLUXO AO VALSALVA.","COM ESTENOSE ESTIMADA EM 60%.","COM ESTENOSE ESTIMADA EM 80%.","COM FLUXO FILIFORME.","MEDINDO 35X28MM.","MEDINDO 42X31MM.","MEDINDO 18X12MM.","MEDINDO 55X40MM.","COM SOMBRA ACUSTICA POSTERIOR.","COM REFORCO ACUSTICO POSTERIOR."];
-        var B3_extra = ["COLELITIASE MULTIPLA. PAREDE VESICULAR FINA.","COLECISTITE AGUDA. ESPESSAMENTO PARIETAL. MURPHY POSITIVO.","ESTEATOSE HEPATICA GRAU I.","ESTEATOSE HEPATICA GRAU II.","ESTEATOSE HEPATICA GRAU III.","NEFROPATIA PARENQUIMATOSA CRONICA BILATERAL.","HIDRONEFROSE GRAU I A DIREITA.","HIDRONEFROSE GRAU II A ESQUERDA.","HIDRONEFROSE GRAU III A DIREITA COM CALCULO OBSTRUTIVO NA JUP.","CALCULO RENAL DE 6MM EM GRUPO CALICINAL INFERIOR DIREITO.","CALCULO URETERAL DE 5MM EM TERCO DISTAL ESQUERDO.","ENDOMETRIOMA NO OVARIO ESQUERDO.","CISTO FUNCIONAL NO OVARIO DIREITO.","MIOMA UTERINO INTRAMURAL DE 45MM.","MIOMA UTERINO SUBMUCOSO DE 22MM.","ADENOMIOSE DIFUSA.","ESPESSAMENTO ENDOMETRIAL DE 14MM.","GESTACAO UNICA TOPICA DE 12 SEMANAS. TRANSLUCENCIA NUCAL NORMAL.","GESTACAO DE 32 SEMANAS. PESO FETAL ENTRE P25 E P50.","PLACENTA PREVIA MARGINAL.","LIQUIDO AMNIOTICO NORMAL. ILA 12CM.","OLIGODRAMNIA. ILA 4CM.","POLIDRAMNIA. ILA 28CM.","DOPPLERVELOCIMETRIA DA ACM NORMAL.","IP DA ARTERIA UTERINA DIREITA DE 0.85.","TROMBOSE VENOSA PROFUNDA AGUDA EM FEMORAL SUPERFICIAL DIREITA.","TVP AGUDA EM POPLITEA ESQUERDA COM EXTENSAO PARA TIBIAIS POSTERIORES.","INSUFICIENCIA VENOSA CRONICA COM REFLUXO EM SAFENA MAGNA.","VARICOCELE GRAU III A ESQUERDA.","HIDROCELE A DIREITA DE MODERADO VOLUME.","LAUDOS.AI AVALIA CONCLUSAO CONCISAO CORPO LOCALIZACAO FORMATACAO.","CINCO DIMENSOES. CRIT. QUAL. TERM. GUIDE. RAG.","BENCHMARK ABERTO. CODIGO NO GITHUB. CONTRIBUA.","LAIBENCH. PADRAO-OURO PARA GERACAO DE LAUDOS EM PT-BR.","AVALIACAO PARAMETRICA. REPRODUCIVEL. AUDITAVEL. OPEN-SOURCE."];
-        var B4_anat = ["UMERO PROXIMAL DIREITO","UMERO DISTAL ESQUERDO","RADIO DISTAL DIREITO","ULNA PROXIMAL ESQUERDA","FEMUR PROXIMAL DIREITO","FEMUR DISTAL ESQUERDO","TIBIA PROXIMAL DIREITA","TIBIA DISTAL ESQUERDA","FIBULA DISTAL DIREITA","PATELA ESQUERDA","CALCANEO DIREITO","TALUS ESQUERDO","ESCAFOIDE DIREITO","CLAVLCULA ESQUERDA","ARCO COSTAL POSTERIOR DIREITO 7","ARCO COSTAL LATERAL ESQUERDO 9","CORPO VERTEBRAL DE L1","CORPO VERTEBRAL DE T12","CORPO VERTEBRAL DE L4","PEDLCULO DE L3","SACRO","ARTICULACAO COXOFEMORAL ESQUERDA","ARTICULACAO DO OMBRO DIREITO","ARTICULACAO DO COTOVELO ESQUERDO","ARTICULACAO DO JOELHO DIREITO","ARTICULACAO DO TORNOZELO ESQUERDO","ARTICULACAO SACROILIACA BILATERAL","SINFISE PUBICA","ACETABULO ESQUERDO","CABECA FEMORAL DIREITA"];
-        var B4_find = ["FRATURA TRANSVERSA","FRATURA OBLIQUA","FRATURA ESPIRAL","FRATURA COMINUTIVA","FRATURA POR AVULSAO","FRATURA POR ESTRESSE","FRATURA PATOLOGICA","FRATURA IMPACTADA","FRATURA POR COMPRESSAO","LUXACAO ANTERIOR","LUXACAO POSTERIOR","SUBLUXACAO","OSTEOARTROSE GRAU II","OSTEOARTROSE GRAU III","OSTEOARTROSE GRAU IV","OSTEOCONDRITE DISSECANTE","OSTEONECROSE","OSTEOMIELITE","LESAO OSTEOLITICA","LESAO OSTEOESCLEROTICA","ENCONDROMA","OSTEOCONDROMA","TUMOR DE CELULAS GIGANTES","CONDROSSARCOMA","CONSOLIDACAO VICIOSA","PSEUDOARTROSE","ESPONDILOLISTESE GRAU I","ESPONDILOLISTESE GRAU II","ESCOLIOSE","CIFOSE ACENTUADA"];
-        var B4_det = ["SEM DESVIO.","COM DESVIO LATERAL.","COM DESVIO MEDIAL.","COM ANGULACAO EM VALGO.","COM ANGULACAO EM VARO.","COM ENCURTAMENTO DE 12MM.","COM FRAGMENTO INTRA-ARTICULAR.","CLASSIFICACAO NEER TIPO II.","CLASSIFICACAO GARDEN III.","CLASSIFICACAO GARDEN IV.","CLASSIFICACAO WEBER B.","CLASSIFICACAO SCHATZKER III.","CLASSIFICACAO SCHATZKER V.","CLASSIFICACAO MASON II.","CLASSIFICACAO COLLES.","CLASSIFICACAO SMITH.","CLASSIFICACAO FICAT II.","CLASSIFICACAO FICAT III.","CLASSIFICACAO DENIS B.","ANGULO DE COBB DE 22 GRAUS.","ANGULO DE COBB DE 34 GRAUS.","ANGULO DE COBB DE 48 GRAUS.","COM LESAO DE BANKART OSSEO.","COM LESAO DE HILL-SACHS.","COM RUPTURA DO LCA.","COM LESAO MENISCAL MEDIAL.","COM EDEMA MEDULAR OSSEO.","COM DERRAME ARTICULAR.","COM CALO OSSEO EXUBERANTE.","COM MATERIAL DE OSTEOSSINTESE IN SITU."];
-        var B4_extra = ["CARDIOMEGALIA GRAU I. ICT DE 0.54.","CARDIOMEGALIA GRAU II. ICT DE 0.62.","CARDIOMEGALIA GRAU III. ICT DE 0.71.","CONGESTAO PULMONAR COM CEFALZACAO DA TRAMA VASCULAR.","EDEMA PULMONAR ALVEOLAR BILATERAL.","DERRAME PLEURAL BILATERAL.","PNEUMOPERITONIO SOB CUPULAS DIAFRAGMATICAS.","DISTENSAO DE ALCAS DE DELGADO COM NIVEIS HIDROAEREOS.","PNEUMONIA LOBAR EM BASE PULMONAR DIREITA.","PNEUMONIA BRONCOPNEUMONICA EM TERCO MEDIO DO PULMAO ESQUERDO.","ALARGAMENTO DO MEDIASTINO SUPERIOR.","CALCIFICACAO DA AORTA TORACICA.","ATEROMATOSE AORTICA DIFUSA.","SINDESMOFITOS MARGINAIS. COLUNA EM BAMBU. ESPONDILITE ANQUILOSANTE.","SACROILELTE BILATERAL GRAU III.","EROSOES MARGINAIS NAS METACARPOFALANGEANAS. ARTRITE REUMATOIDE.","TOFOS GOTOSOS EM PRIMEIRA METATARSOFALANGEANA.","CALCIFICACAO DO MENISCO LATERAL. CONDROCALCINOSE.","CORPO LIVRE INTRA-ARTICULAR NO JOELHO DIREITO.","OSSIFICACAO HETEROTOPICA PERIARTICULAR.","PADRAO-OURO BENCHMARK RADIOLOGICO. TEXTO PURO. SEM VISAO COMPUTACIONAL.","LAIBENCH NAO AVALIA IMAGEM. AVALIA TEXTO GERADO POR IA.","BENCHMARK ABERTO. REPRODUCIVEL. CODIGO NO GITHUB.","POR LAUDOS.AI. GERACAO DE LAUDOS RADIOLOGICOS.","LAIBENCH V1.0. REFERENCIA PUBLICA E SUITE PRIVADA DE 40 CASOS."];
+        var B1_anat = ["PUBLIC METHOD", "SYNTHETIC DEMO", "CONTROLLED DATA", "HOSTED EVALUATION", "STRICT PASS", "AUDITABLE RUNS"];
+        var B1_find = ["FRAMEWORK", "SCHEMA", "HARNESS", "SCORE CONTRACT", "SUBMISSION RULE", "TRACE METADATA"];
+        var B1_det = ["NO CLINICAL CORPUS PUBLIC.", "NO HIDDEN TEST DISTRIBUTED.", "NO ANSWER KEYS.", "NO RAW REPORTS.", "NO DEPLOYMENT CLAIM.", "NO REGULATORY CLAIM."];
+        var B1_extra = ["THE METHOD IS PUBLIC.", "THE CLINICAL CORPUS IS CONTROLLED.", "OFFICIAL EVALUATION IS GATED."];
+
+        var B2_anat = ["TECHNICAL PREVIEW", "PUBLIC SAFE MIRROR", "SYNTHETIC CASE", "MODEL DISCLOSURE", "FROZEN OUTPUT", "SUITE HASH"];
+        var B2_find = ["VALIDATION", "REPRODUCIBILITY", "PRIVACY HYGIENE", "AUDIT TRAIL", "GOVERNANCE", "ELIGIBILITY REVIEW"];
+        var B2_det = ["SYNTHETIC ONLY.", "CONTROLLED ACCESS.", "HOSTED REVIEW.", "PRIVATE TEST SET.", "DISCLOSURE REQUIRED.", "NO AUTONOMOUS DIAGNOSIS."];
+        var B2_extra = ["PUBLIC TECHNICAL REVIEW.", "CONTROLLED CLINICAL DATA.", "QUALIFIED HUMAN OVERSIGHT REQUIRED."];
+
+        var B3_anat = ["OMISSION CHECK", "HALLUCINATION CHECK", "CONTRADICTION CHECK", "STRUCTURE CHECK", "PRIVACY CHECK", "AUDITABILITY CHECK"];
+        var B3_find = ["PASS GATE", "FAILURE MODE", "DIMENSION SCORE", "STRICT PASS", "RUN MANIFEST", "SUBMISSION ARTIFACT"];
+        var B3_det = ["DEMO CASE.", "PUBLIC SAFE.", "REVIEWABLE.", "TRACEABLE.", "REPRODUCIBLE.", "NOT CLINICAL VALIDATION."];
+        var B3_extra = ["PUBLIC DEMO ONLY.", "OFFICIAL ROWS REQUIRE REVIEW.", "NO PUBLIC CLINICAL LEADERBOARD YET."];
+
+        var B4_anat = ["LAIBENCH", "LAUDOS.AI", "BENCHMARK CARD", "DATA POLICY", "PREPRINT DRAFT", "PUBLIC REPOSITORY"];
+        var B4_find = ["SYNTHETIC SUITE", "SCORING HARNESS", "JSON SCHEMA", "CLI TOOL", "SITE ASSET", "PAPER MATERIAL"];
+        var B4_det = ["TECHNICAL PREVIEW.", "SOURCE AVAILABLE.", "CONTROLLED DATA.", "GATED EVALUATION.", "HIDDEN TEST PRIVATE.", "NO MEDICAL DEVICE CLAIM."];
+        var B4_extra = ["GITHUB LAUDOS-AI LAIBENCH-PUBLIC.", "PUBLIC METHOD CONTROLLED DATA.", "HOSTED EVALUATION BY REQUEST."];
 
         // Dark contour colors for the canvas background
         var CONTOURS = [
@@ -1060,12 +1021,12 @@
         var i18n = {
             en: {
                 leaderboard: 'Leaderboard', howItWorks: 'How It Works', dimensions: 'Dimensions',
-                submit: 'Submit', paper: 'Paper', tagline: 'A public reference benchmark for radiology finding-to-report generation.',
-                globalRankings: 'Public Reference Snapshot', lbDesc: 'Public rows show only evaluation class and Strict PASS rate. Internal implementation details are intentionally withheld.',
-                evalProtocol: 'Evaluation Protocol', evalDesc: 'A locked finding-to-report protocol. Strict PASS is the only public ranking metric.',
-                input: 'Input', inputDesc: 'The evaluated system receives an exam descriptor, clinical findings, and optional context: gold findings, guideline expectations, and patient history. It must generate a complete HTML radiology report.',
-                evaluation: 'Evaluation', evalCardDesc: '5 modular evaluators (CRIT, QUAL, TERM, GUIDE, RAG) with an extraction layer, synonym matching, and negation handling. Phase 2: Adversarial LLM judge detects hallucinations.',
-                score: 'Score', scoreDesc: 'Strict PASS is the only public ranking metric. Judged runs use judge-primary scoring with deterministic clinical gates. Per-dim scores are diagnostic only.',
+                submit: 'Submit', paper: 'Paper', tagline: 'Technical preview for radiology finding-to-report evaluation. Public method, synthetic demo cases, controlled clinical corpus, hosted evaluation by request.',
+                globalRankings: 'Standing - Public Technical Preview', lbDesc: 'Synthetic demo only. This is not an official clinical leaderboard. Official rows require controlled or hosted evaluation with frozen outputs, suite hashes, disclosure metadata, and eligibility review.',
+                evalProtocol: 'Evaluation Protocol', evalDesc: 'A technical-preview finding-to-report protocol. Strict PASS is the public gate metric for the synthetic demo suite.',
+                input: 'Input', inputDesc: 'The evaluated system receives an exam descriptor, synthetic findings, and public-safe optional context. It must generate a complete HTML radiology report for framework testing.',
+                evaluation: 'Evaluation', evalCardDesc: '5 modular evaluators (CRIT, QUAL, TERM, GUIDE, RAG) with an extraction layer, synonym matching, and negation handling for framework review.',
+                score: 'Score', scoreDesc: 'Strict PASS is the public gate metric for the synthetic demo. Official rows require controlled or hosted evaluation with disclosure metadata.',
                 fiveAxes: 'Five Independent Axes', axesDesc: 'Each dimension is scored independently and feeds the Strict PASS gate. A case passes only when every gate holds.',
                 scoreFlowTitle: 'How a case becomes a score', scoreFlowInput: 'Locked input', scoreFlowInputDesc: 'Exam, findings, and public-safe expectations are fixed before any system runs.',
                 scoreFlowChecks: 'Five checks', scoreFlowChecksDesc: 'CRIT, QUAL, TERM, GUIDE, and RAG score independent failure modes.',
@@ -1075,25 +1036,25 @@
                 weightTitle: 'Clinical weight mix', weightNote: 'Reporting rule: Strict PASS is the only public metric. Per-dim scores are diagnostic only.',
                 integrity: 'Integrity Guarantees', integrityDesc: 'Scores are recomputed from case results and checked against locked suite hashes before leaderboard publication.',
                 submitTitle: 'Test Your Agent', submitLabel: 'Submit',
-                submitDesc: 'Any company, lab, or independent team can run the public suite and get a comparable score without exposing internal implementation.',
-                step1Title: '1. Choose a public suite', step1Desc: 'Use the public repository to prepare the evaluation files and scoring harness.',
-                step2Title: '2. Generate reports', step2Desc: 'Run each case through your own product, agent, or reporting workflow.',
-                step3Title: '3. Score the submission', step3Desc: 'Score the generated reports against the locked public cases. Only the public label, validation counts, and scores need to be shared.',
-                step4Title: '4. Publish comparable results', step4Desc: 'Submit the run artifact for leaderboard review. Proprietary implementation details stay private.',
+                submitDesc: 'Any company, lab, or independent team can run the synthetic public demo locally. Official clinical evaluation remains controlled or hosted.',
+                step1Title: '1. Clone the public mirror', step1Desc: 'Use the public-safe repository to inspect the harness, schemas, and synthetic demo suite.',
+                step2Title: '2. Generate demo reports', step2Desc: 'Run each synthetic case through your own product, agent, or reporting workflow.',
+                step3Title: '3. Score the demo output', step3Desc: 'Score generated reports against the synthetic demo suite. Demo scores are not clinical validation.',
+                step4Title: '4. Request official evaluation', step4Desc: 'Official rows require controlled or hosted evaluation, frozen outputs, disclosure metadata, and eligibility review.',
                 preprint: 'Preprint',
                 pending: 'pending', rank: 'Rank', agent: 'Agent', track: 'Track',
                 themeBtn: 'Light', langBtn: 'PT-BR',
                 cases: 'Cases', dims: 'Dimensions', tests: 'Tests', scale: 'Scale', suites: 'Suites',
-                v2HeroNote: 'v2.1 ships statistical rigor (κ, α, paired bootstrap), 8 deterministic adversarial perturbations (laterality flip, negation drop/insert, measurement scramble, critical drop/invent, terminology corrupt, structure break), 528 variant-controlled tasks across 66 conditions × 8 variants, 45 anti-overcalling controls, 50 fully localized PT-BR tasks, frozen judge profile, and a SHA-256 reproducibility hash chain.',
+                v2HeroNote: 'Technical preview: public framework, synthetic demo suite, controlled clinical corpus, private hidden test set, and hosted evaluation by request.',
             },
             pt: {
                 leaderboard: 'Ranking', howItWorks: 'Como Funciona', dimensions: 'Dimens\u00f5es',
-                submit: 'Submeter', paper: 'Artigo', tagline: 'Benchmark p\u00fablico de refer\u00eancia para gera\u00e7\u00e3o de laudos radiol\u00f3gicos a partir de achados.',
-                globalRankings: 'Snapshot P\u00fablico de Refer\u00eancia', lbDesc: 'As linhas p\u00fablicas mostram apenas classe de avalia\u00e7\u00e3o e taxa de Strict PASS. Detalhes internos de implementa\u00e7\u00e3o ficam ocultos.',
-                evalProtocol: 'Protocolo de Avalia\u00e7\u00e3o', evalDesc: 'Protocolo de tarefas travadas. Strict PASS \u00e9 a \u00fanica m\u00e9trica p\u00fablica de ranking.',
+                submit: 'Submeter', paper: 'Artigo', tagline: 'Technical preview para avaliacao finding-to-report em radiologia. Metodo publico, demo sintetico, corpus clinico controlado e avaliacao hospedada sob demanda.',
+                globalRankings: 'Standing - Technical Preview Publico', lbDesc: 'Demo sintetico apenas. Isto nao e leaderboard clinico oficial. Linhas oficiais exigem avaliacao controlada ou hospedada, outputs congelados, hashes de suite, metadados de disclosure e revisao de elegibilidade.',
+                evalProtocol: 'Protocolo de Avaliacao', evalDesc: 'Protocolo technical-preview finding-to-report. Strict PASS e a metrica publica de gate para a suite sintetica demo.',
                 input: 'Entrada', inputDesc: 'O sistema avaliado recebe um descritor de exame, achados sinteticos e contexto opcional de demonstracao. Deve gerar um laudo radiologico HTML completo.',
-                evaluation: 'Avalia\u00e7\u00e3o', evalCardDesc: '5 avaliadores modulares (CRIT, QUAL, TERM, GUIDE, RAG) com camada de extra\u00e7\u00e3o, matching de sin\u00f4nimos e tratamento de nega\u00e7\u00e3o. Fase 2: Juiz LLM adversarial detecta alucina\u00e7\u00f5es.',
-                score: 'Score', scoreDesc: 'Strict PASS \u00e9 a \u00fanica m\u00e9trica p\u00fablica de ranking. Runs julgados usam scoring judge-primary com gates cl\u00ednicos determin\u00edsticos. Scores por dimens\u00e3o s\u00e3o apenas diagn\u00f3stico.',
+                evaluation: 'Avaliacao', evalCardDesc: '5 avaliadores modulares (CRIT, QUAL, TERM, GUIDE, RAG) com camada de extracao, matching de sinonimos e tratamento de negacao para revisao do framework.',
+                score: 'Score', scoreDesc: 'Strict PASS e a metrica publica de gate para o demo sintetico. Linhas oficiais exigem avaliacao controlada ou hospedada com metadados de disclosure.',
                 fiveAxes: 'Cinco Eixos Independentes', axesDesc: 'Cada dimens\u00e3o \u00e9 pontuada independentemente e alimenta o gate Strict PASS. Caso passa s\u00f3 quando todo gate vale.',
                 scoreFlowTitle: 'Como um caso vira score', scoreFlowInput: 'Entrada travada', scoreFlowInputDesc: 'Exame, achados e expectativas p\u00fablicas ficam fixos antes de qualquer sistema rodar.',
                 scoreFlowChecks: 'Cinco checks', scoreFlowChecksDesc: 'CRIT, QUAL, TERM, GUIDE e RAG pontuam modos de falha independentes.',
@@ -1103,16 +1064,16 @@
                 weightTitle: 'Pesos cl\u00ednicos', weightNote: 'Regra de publica\u00e7\u00e3o: Strict PASS \u00e9 a \u00fanica m\u00e9trica p\u00fablica. Scores por dimens\u00e3o s\u00e3o apenas diagn\u00f3stico.',
                 integrity: 'Garantias de Integridade', integrityDesc: 'Os scores s\u00e3o recalculados a partir dos casos e checados contra hashes de su\u00edte travada antes do leaderboard.',
                 submitTitle: 'Teste Seu Agente', submitLabel: 'Submeter',
-                submitDesc: 'Qualquer empresa, laborat\u00f3rio ou equipe independente pode rodar a su\u00edte p\u00fablica e obter um score compar\u00e1vel sem expor a implementa\u00e7\u00e3o interna.',
-                step1Title: '1. Escolha uma su\u00edte p\u00fablica', step1Desc: 'Use o reposit\u00f3rio p\u00fablico para preparar os arquivos de avalia\u00e7\u00e3o e o avaliador.',
-                step2Title: '2. Gere os laudos', step2Desc: 'Rode cada caso pelo seu produto, agente ou fluxo de laudo.',
-                step3Title: '3. Calcule o score', step3Desc: 'Pontue os laudos gerados contra os casos p\u00fablicos travados. Apenas o r\u00f3tulo p\u00fablico, as contagens de valida\u00e7\u00e3o e os scores precisam ser compartilhados.',
-                step4Title: '4. Publique resultados compar\u00e1veis', step4Desc: 'Submeta o artefato de run para revis\u00e3o do ranking. Detalhes propriet\u00e1rios de implementa\u00e7\u00e3o continuam privados.',
+                submitDesc: 'Qualquer empresa, laboratorio ou equipe independente pode rodar o demo sintetico localmente. A avaliacao clinica oficial continua controlada ou hospedada.',
+                step1Title: '1. Clone o mirror publico', step1Desc: 'Use o repositorio publico seguro para inspecionar harness, schemas e suite sintetica demo.',
+                step2Title: '2. Gere laudos demo', step2Desc: 'Rode cada caso sintetico pelo seu produto, agente ou fluxo de laudo.',
+                step3Title: '3. Calcule o score demo', step3Desc: 'Pontue os outputs contra a suite sintetica demo. Scores demo nao sao validacao clinica.',
+                step4Title: '4. Solicite avaliacao oficial', step4Desc: 'Linhas oficiais exigem avaliacao controlada ou hospedada, outputs congelados, metadados de disclosure e revisao de elegibilidade.',
                 preprint: 'Preprint',
                 pending: 'pendente', rank: 'Pos', agent: 'Agente', track: 'Track',
                 themeBtn: 'Light', langBtn: 'PT-BR',
                 cases: 'Casos', dims: 'Dimens\u00f5es', tests: 'Testes', scale: 'Escala', suites: 'Suites',
-                v2HeroNote: 'v2.1 traz rigor estat\u00edstico (\u03ba, \u03b1, paired bootstrap), 8 perturba\u00e7\u00f5es adversariais determin\u00edsticas (lateralidade, nega\u00e7\u00e3o, medidas, achados cr\u00edticos, terminologia, estrutura), 528 tasks variantes (66 condi\u00e7\u00f5es x 8 variantes), 45 controles anti-overcalling, 50 tasks PT-BR totalmente localizadas, judge profile congelado e cadeia de hash SHA-256 reproduz\u00edvel.',
+                v2HeroNote: 'Technical preview: framework publico, suite demo sintetica, corpus clinico controlado, hidden test privado e avaliacao hospedada sob demanda.',
             }
         };
 

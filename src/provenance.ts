@@ -63,7 +63,7 @@ export async function scoringHashFromFiles(paths: string[]): Promise<string> {
 
 /**
  * Default scoring source files that affect comparable results.
- * Verified against the v2.0.0 source tree — every path must exist.
+ * Every referenced path must exist.
  * Append new evaluators here so they enter the scoringHash.
  */
 export const DEFAULT_SCORING_FILES = [
